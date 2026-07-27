@@ -1,7 +1,30 @@
 aid: hexafarms
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hexafarms.png
 name: Hexafarms
-description: Hexafarms is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hexafarms GmbH is a Berlin-based agricultural technology company that builds
+  AI-powered greenhouse optimization software for commercial growers. Its
+  platform combines computer vision, environmental sensors, and machine learning
+  to help greenhouse and foil-tunnel operations forecast yield, register crops,
+  and detect pests and disease early. Products include AI yield forecasting
+  (claimed up to 20% more accurate than traditional methods), automated crop
+  registration via fruit and flower counting, pest and disease monitoring, and
+  environmental sensing across crops such as strawberries, tomatoes, bell
+  peppers, blueberries, cucumbers, raspberries, and aubergine. The product is
+  delivered as a login-gated web application at hexafarms.app; no public developer
+  API or documentation surface has been identified. Hexafarms was surfaced as a
+  portfolio company of Speedinvest and added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/hexafarms/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Agriculture
+- AgTech
+- Greenhouse
+- Artificial Intelligence
+- Computer Vision
+- Precision Agriculture
+- Yield Forecasting
 apis: []
+common:
+- type: DomainSecurity
+  url: security/hexafarms-domain-security.yml
+- type: Website
+  url: https://www.hexafarms.com
+- type: Blog
+  url: https://www.hexafarms.com/resources/blog
+- type: Support
+  url: https://www.hexafarms.com/utility/get-in-contact
+- type: HelpCenter
+  url: https://www.hexafarms.com/resources/faq
+- type: Login
+  url: https://hexafarms.app/users/log_in
+- type: PrivacyPolicy
+  url: https://www.hexafarms.com/utility/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/hexafarms/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
